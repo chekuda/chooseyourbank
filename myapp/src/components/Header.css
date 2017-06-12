@@ -1,11 +1,24 @@
 .Header {
-	color: #ffffff;
+  color: #ffffff;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  line-height: 40px;
 }
 .text-header {
-	width: 90%;
 	display: inline-block;
+	line-height: 10px;
+	font-size: 30px;
 }
 .info-logo{
-	width: 10%;
-	display: inline-block;
+  color: #3581B4;
+  position: absolute;
+  display: inline-block;
+  right: 40px;
+  background: #ffffff;
+  width: 32px;
+  height: 32px;
+  font-weight: bold;
+  line-height: 36px;
+  font-size: 25px;
+  border-radius: 19px;
 }

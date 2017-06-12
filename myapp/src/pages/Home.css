@@ -1,6 +1,4 @@
 .Home {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background: blue;
+  background: linear-gradient(to right, #6D72A4 , #3581B4 );
 }
