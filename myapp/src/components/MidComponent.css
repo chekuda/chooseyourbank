@@ -1,0 +1,15 @@
+.TopComponent {
+	width: 100%;
+	background: #f5f5f5;
+}
+.TopComponent-Logo {
+	max-width:250px;
+}
+.TomComponent-midText{
+	font-size: 17px;
+	padding: 10px;
+}
+.TopComponent-BottomText{
+	font-size: 15px;
+	padding: 10px;
+}
