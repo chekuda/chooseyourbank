@@ -1,6 +1,7 @@
-class BanksInfo {
+class BankInfo {
 	constructor(banksInfo){
-		this.banksInfo = banksInfo;
+		this.displayNam = bankInfo;
+
 	}
 	getBankLogo(){
 		return this.logo;

@@ -1,24 +1,4 @@
 [
-    // {
-    //     "connectorId": "mock",
-    //     "displayName": "mock",
-    //     "logoURL": "~/images/logos/mock.png",
-    //     "authMethod": "password",
-    //     "fields": [
-    //         {
-    //             "id": "username",
-    //             "displayName": "Username",
-    //             "isPassword": false,
-    //             "type": "text"
-    //         },
-    //         {
-    //             "id": "password",
-    //             "displayName": "Password",
-    //             "isPassword": true,
-    //             "type": "password"
-    //         }
-    //     ]
-    // },
     {
         "connectorId": "barclays",
         "displayName": "Barclays",
@@ -227,62 +207,4 @@
             }
         ]
     }
-    // {
-    //     "connectorId": "santander",
-    //     "displayName": "Santander",
-    //     "logoURL": "~/images/logos/santander.png",
-    //     "authMethod": "password",
-    //     "fields": [
-    //         {
-    //             "id": "personalId",
-    //             "displayName": "Personal Id",
-    //             "isPassword": false,
-    //             "type": "number"
-    //         },
-    //         {
-    //             "id": "password",
-    //             "displayName": "Password",
-    //             "isPassword": true,
-    //             "type": "password"
-    //         },
-    //         {
-    //             "id": "securityNumber",
-    //             "displayName": "Security Number",
-    //             "isPassword": true,
-    //             "type": "password"
-    //         }
-    //     ],
-    //     "fieldCollections": [
-    //         {
-    //             "id": "securityQuestions",
-    //             "displayName": "Security Questions",
-    //             "fields": [
-    //                 {
-    //                     "id": "Place of Birth",
-    //                     "displayName": "Place of Birth",
-    //                     "isPassword": false,
-    //                     "type": "text"
-    //                 },
-    //                 {
-    //                     "id": "Name of first school",
-    //                     "displayName": "Name of first school",
-    //                     "isPassword": false,
-    //                     "type": "text"
-    //                 },
-    //                 {
-    //                     "id": "Name of secondary school",
-    //                     "displayName": "Name of secondary school",
-    //                     "isPassword": false,
-    //                     "type": "text"
-    //                 },
-    //                 {
-    //                     "id": "Father's middle name",
-    //                     "displayName": "Father's middle name",
-    //                     "isPassword": false,
-    //                     "type": "text"
-    //                 }
-    //             ]
-    //         }
-    //     ]
-    // }
 ]
