@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
+import logo from '../images/fakelogo.png';
 import './TopComponent.css';
 
 class TopComponent extends Component {
@@ -7,8 +7,8 @@ class TopComponent extends Component {
     return (
       <div className="TopComponent">
       	<img className="TopComponent-Logo" src={logo}/>
-      	<div className="TopComponent-midText">Top text</div>
-      	<div className="TopComponent-BottomText">* bottom text</div>
+      	<div className="TopComponent-midText">Appname wants to acess your bak data for:</div>
+      	<div className="TopComponent-BottomText">* identification * Personal finance Manager</div>
       </div>
     );
   }
