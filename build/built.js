@@ -9,15 +9,14 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var BankConsumer = function () {
-	function BankConsumer(logo, age) {
-		_classCallCheck(this, BankConsumer);
+var BanksInfo = function () {
+	function BanksInfo(banksInfo) {
+		_classCallCheck(this, BanksInfo);
 
-		this.logo = logo;
-		this.name = name;
+		this.banksInfo = banksInfo;
 	}
 
-	_createClass(BankConsumer, [{
+	_createClass(BanksInfo, [{
 		key: "getBankLogo",
 		value: function getBankLogo() {
 			return this.logo;
@@ -29,27 +28,39 @@ var BankConsumer = function () {
 		}
 	}]);
 
-	return BankConsumer;
+	return BanksInfo;
 }();
 
-exports.default = BankConsumer;
+exports.default = BanksInfo;
 
 },{}],2:[function(require,module,exports){
 'use strict';
 
-var _BankConsumer = require('./BankConsumer');
+var _banksInfo = require('./banksInfo');
 
-var _BankConsumer2 = _interopRequireDefault(_BankConsumer);
+var _banksInfo2 = _interopRequireDefault(_banksInfo);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var firstFuntion = function firstFuntion() {
-	var bankConsumer = new _BankConsumer2.default('image', 'barclays');
-	console.log(bankConsumer.getBankLogo());
+var requestBanksInfo = function requestBanksInfo() {
+  var req = new XMLHttpRequest();
+  req.open('GET', '/publishbankinfo');
+  req.onload = function () {
+    if (req.status == 200) {
+      console.log(req.response);
+    } else {
+      new Error(req.statusText);
+    }
+  };
+
+  req.onerror = function () {
+    new Error('Network Error');
+  };
+  req.send();
 };
 
 window.onload = function () {
-	firstFuntion();
+  requestBanksInfo();
 };
 
-},{"./BankConsumer":1}]},{},[2]);
+},{"./banksInfo":1}]},{},[2]);
