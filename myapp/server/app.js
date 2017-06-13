@@ -1,12 +1,14 @@
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
+const cors = require('cors');
 
 const port = 7000;
 const app = express();
 
 let publishBankInfo = require('./routes/publishBankInfo');
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(express.static(__dirname + '/build'));
 app.use(express.static(__dirname + '/public/assets'));

@@ -2,3 +2,18 @@
   text-align: center;
   background: linear-gradient(to right, #6D72A4 , #3581B4 );
 }
+.listBanks{
+	background: #ffffff;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+.bankLogo{
+	width: 50%;
+  display: inline-block;
+  text-align: center;
+}
+.bankLogo img{
+	 border: solid 1px #cccccc;
+	width: 30%;
+	padding: 30px;
+}

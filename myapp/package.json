@@ -10,6 +10,7 @@
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "cors": "^2.8.3",
     "enzyme": "^2.8.2",
     "react-addons-test-utils": "^15.5.1",
     "react-scripts": "1.0.7"

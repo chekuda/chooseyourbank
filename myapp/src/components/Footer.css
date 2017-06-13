@@ -1,10 +1,9 @@
 .Footer {
-  position: absolute;
+  background: #ffffff;
   bottom: 0px;
   color: #cccccc;
   font-size: 15px;
   padding-bottom: 30px;
-  padding-top: 30px;
   line-height: 25px;
   width: 100%;
   border-top: solid 1px #dacfcf;
