@@ -29,7 +29,7 @@ class Home extends Component {
         <TopComponent/>
         <div className="listBanks">
        	  {this.state.banks.map((bank, index) => {
-       		  return <div className="bankLogo">
+       		  return <div className="bankLogo" key={`bank-${index}`}>
        		  	<a href='#'><img key={`bank-${index}`} src={bank.logoURL}/></a></div>
        	  })}
         </div>
