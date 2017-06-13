@@ -3,6 +3,7 @@
   padding-bottom: 20px;
   padding-top: 40px;
   line-height: 40px;
+  background: linear-gradient(to right, #6D72A4 , #3581B4 );
 }
 .text-header {
 	display: inline-block;

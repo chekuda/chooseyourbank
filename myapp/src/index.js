@@ -5,5 +5,7 @@ import './index.css';
 
 import Home from './pages/Home';
 
+import Form from './pages/Form';
+
 ReactDOM.render(<Home />, document.getElementById('root'));
 registerServiceWorker();

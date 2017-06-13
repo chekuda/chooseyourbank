@@ -25,8 +25,8 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <Header/>
-        <TopComponent/>
+        <Header inputText="Choose your Bank"/>
+        <TopComponent mainText="Appname wants to access your bank data for:" subText="• Identification • Personal finance manager"/>
         <div className="listBanks">
        	  {this.state.banks.map((bank, index) => {
             let bkImage = {

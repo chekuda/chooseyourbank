@@ -1,0 +1,46 @@
+.Form {
+  text-align: center;
+}
+.loginForm {
+  margin: 0 auto;
+  max-width: 400px;
+  padding-bottom: 30px;
+}
+.topText {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.topText .bankname{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+.topText p {
+  font-size: 14px;
+  color: #5c5cb5;
+}
+.loginForm input {
+  margin: 0 auto;
+  display: block;
+  width: 90%;
+  margin-bottom: 10px;
+  height: 33px;
+}
+.submitButton {
+  margin: 0 auto;
+  display: block;
+  background: red;
+  border-radius: 10px;
+  border-color: transparent;
+  color: #ffffff;
+  font-size: 15px;
+  width: 90%;
+  margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #cccccc;
+  padding-left: 20px;
+  font-size: 15px;
+  transition: opacity 250ms ease-in-out;
+}

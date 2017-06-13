@@ -12,4 +12,6 @@
 .TopComponent-BottomText{
 	font-size: 15px;
 	padding: 10px;
+  max-width: 440px;
+  margin: 0 auto;
 }
