@@ -7,5 +7,5 @@ import Home from './pages/Home';
 
 import Form from './pages/Form';
 
-ReactDOM.render(<Home />, document.getElementById('root'));
+ReactDOM.render(<Form />, document.getElementById('root'));
 registerServiceWorker();

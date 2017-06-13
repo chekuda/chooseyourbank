@@ -12,9 +12,23 @@ class Form extends Component {
     }
 	}
 
-	getBanksInfo () {
+	sendLoginDetails() {
+    const personalId = (document.getElementById('personalId') || {}).value;
+    const password = (document.getElementById('Password') || {}).value;
+    const snumber = (document.getElementById('Snumber') || {}).value;
 
-	}
+    if(personalId && password && snumber){
+        xhr.post('http://localhost:7000/logindata', {name: 'jose'},(err, resp) => {
+          if (err) {
+            new Error('BankEnd error');
+          }
+          console.log(JSON.parse(resp.body));
+        });
+    }
+    else{
+      alert('Information missed');
+    }
+  }
 
   render() {
     return (
@@ -27,10 +41,10 @@ class Form extends Component {
         </div>
         <div className="loginForm">
        	  <form>
-            <input type="text" name="name" placeholder="Personal ID"/>
-            <input type="text" name="name" placeholder="Password"/>
-            <input type="text" name="name" placeholder="Security Number"/>
-            <input type="submit" value="Next" className="submitButton"/>
+            <input type="text" id="personalId" placeholder="Personal ID"/>
+            <input type="text" id="Password" placeholder="Password"/>
+            <input type="text" id="Snumber" placeholder="Security Number"/>
+            <div className="submitButton" onClick={this.sendLoginDetails}>Next</div>
           </form>
         </div>
         <Footer/>

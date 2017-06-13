@@ -20,6 +20,7 @@
   color: #5c5cb5;
 }
 .loginForm input {
+  font-size: 15px;
   margin: 0 auto;
   display: block;
   width: 90%;
@@ -28,14 +29,14 @@
 }
 .submitButton {
   margin: 0 auto;
-  display: block;
   background: red;
   border-radius: 10px;
-  border-color: transparent;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 35px;
   width: 90%;
   margin-bottom: 10px;
+  height: 33px;
 }
 
 ::-webkit-input-placeholder { /* Chrome */
