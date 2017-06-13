@@ -29,8 +29,11 @@ class Home extends Component {
         <TopComponent/>
         <div className="listBanks">
        	  {this.state.banks.map((bank, index) => {
+            let bkImage = {
+              backgroundImage: 'url( '+bank.logoURL+')'
+            };
        		  return <div className="bankLogo" key={`bank-${index}`}>
-       		  	<a href='#'><img key={`bank-${index}`} src={bank.logoURL}/></a></div>
+       		  	<a href='#' style={bkImage}></a></div>
        	  })}
         </div>
         <Footer/>

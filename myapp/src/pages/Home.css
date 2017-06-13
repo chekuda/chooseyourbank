@@ -11,9 +11,15 @@
 	width: 50%;
   display: inline-block;
   text-align: center;
+  padding-bottom: 20px;
 }
-.bankLogo img{
-	 border: solid 1px #cccccc;
-	width: 30%;
-	padding: 30px;
+.bankLogo a{
+  border: solid 1px #cccccc;
+  width: 60%;
+  min-height: 80px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 30px 20px;
+  background-size: 40%;
 }
