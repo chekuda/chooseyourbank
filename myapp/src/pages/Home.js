@@ -33,7 +33,7 @@ class Home extends Component {
               backgroundImage: 'url( '+bank.logoURL+')'
             };
        		  return <div className="bankLogo" key={`bank-${index}`}>
-       		  	<a href='#' style={bkImage}></a></div>
+       		  	<a href={'/form/' + bank.displayName} style={bkImage}></a></div>
        	  })}
         </div>
         <Footer/>

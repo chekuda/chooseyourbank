@@ -7,10 +7,24 @@ import Footer from '../components/Footer';
 
 class Form extends Component {
 	componentWillMount(){
-    this.state = {
-      bankName: 'Santander'
-    }
+    this.getBankInfo();
 	}
+
+  getBankInfo () {
+    this.setState({ bank: {} });
+
+    xhr.get('http://localhost:7000/publishbankinfo', (err, res) => {
+      if (err) {
+        new Error('BankEnd error');
+      }
+      let currentBank = JSON.parse(res.body).filter((bank) => {
+          return bank.displayName === this.props.params['bankId']
+        });
+
+      this.setState({ bank: currentBank[0] })
+    });
+  }
+
 
 	sendLoginDetails() {
     const loginDataToSend = {
@@ -33,19 +47,20 @@ class Form extends Component {
   }
 
   render() {
+    console.log(this.props.params['bankId']);
     return (
       <div className="Form">
         <Header inputText="Enter your credentials"/>
         <TopComponent subText="We guarantee a simple, secure, transparent way to connect to yourbank account and keep your data secured." mainText="Your security is important."/>
         <div className="topText">
-          <div className="bankname">{this.state.bankName}</div>
+          <div className="bankname">{this.state.bank.displayName}</div>
           <p>Insert your bank account credentials:</p>
         </div>
         <div className="loginForm">
        	  <form>
-            <input type="text" id="personalId" placeholder="Personal ID"/>
-            <input type="text" id="Password" placeholder="Password"/>
-            <input type="text" id="Snumber" placeholder="Security Number"/>
+            <input type="text" id="personalId" required placeholder="Personal ID"/>
+            <input type="text" id="Password" required placeholder="Password"/>
+            <input type="text" id="Snumber" required placeholder="Security Number"/>
             <div className="submitButton" onClick={this.sendLoginDetails}>Next</div>
           </form>
         </div>
