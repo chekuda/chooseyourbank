@@ -1,4 +1,4 @@
-##FullStack test
+## FullStack test
 ## Firts of all
 	- npm install
 ## To run the app in local
