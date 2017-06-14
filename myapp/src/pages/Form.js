@@ -13,16 +13,18 @@ class Form extends Component {
 	}
 
 	sendLoginDetails() {
-    const personalId = (document.getElementById('personalId') || {}).value;
-    const password = (document.getElementById('Password') || {}).value;
-    const snumber = (document.getElementById('Snumber') || {}).value;
+    const loginDataToSend = {
+      personalId: (document.getElementById('personalId') || {}).value,
+      password: (document.getElementById('Password') || {}).value,
+      snumber: (document.getElementById('Snumber') || {}).value
+    }
 
-    if(personalId && password && snumber){
-        xhr.post('http://localhost:7000/logindata', {name: 'jose'},(err, resp) => {
+    if(loginDataToSend.personalId && loginDataToSend.password && loginDataToSend.snumber){
+        xhr.post('http://localhost:7000/logindata', {json: loginDataToSend },(err, res) => {
           if (err) {
             new Error('BankEnd error');
           }
-          console.log(JSON.parse(resp.body));
+          console.log(res.body);
         });
     }
     else{
